@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4faff;
+    color: #333;
+  }
+  
+  header.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1565c0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .menu a {
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 40px;
+    color: #1565c0;
+  }
+  
+  .project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .project-card h3 {
+    color: #1565c0;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .project-link {
+    padding: 10px 20px;
+    background: #1565c0;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .project-link:hover {
+    background: #0b346e;
+  }
+  

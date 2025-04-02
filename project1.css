@@ -1,0 +1,83 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8e1;
+  color: #333;
+}
+
+.project {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 40px;
+  color: #d84315;
+}
+
+.project p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.product-card h3 {
+  color: #ff7043;
+}
+
+.calculator {
+  margin-top: 40px;
+}
+
+.calculator input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.calculator button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #ff7043;
+  color: white;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background: #d84315;
+}
+
+.btn-back {
+  padding: 15px 30px;
+  background: #d84315;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.btn-back:hover {
+  background: #bf360c;
+}

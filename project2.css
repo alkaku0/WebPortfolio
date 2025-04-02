@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f7fa;
+    color: #333;
+  }
+  
+  .project {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .project h2 {
+    font-size: 40px;
+    color: #004d40;
+  }
+  
+  .project p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  
+  .review-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .review-card h3 {
+    color: #00796b;
+    font-size: 20px; /* Correct font size for headings */
+  }
+  
+  .review-card p {
+    font-size: 16px; /* Correct font size for descriptions */
+  }
+  
+  .book-search {
+    margin-top: 40px;
+  }
+  
+  .book-search h3 {
+    font-size: 24px;
+    color: #004d40;
+    margin-bottom: 15px;
+  }
+  
+  .book-search input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .book-search button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #00796b;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Correct font size for buttons */
+  }
+  
+  .book-search button:hover {
+    background: #004d40;
+  }
+  
+  #searchResult {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #004d40;
+  }
+  
+  .btn-back {
+    padding: 15px 30px;
+    background: #004d40;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  
+  .btn-back:hover {
+    background: #00251a;
+  }
+  
