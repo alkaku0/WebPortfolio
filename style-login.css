@@ -1,0 +1,81 @@
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1e88e5, #42a5f5); /* Blue gradient */
+  }
+  
+  /* Login Container */
+  .login-container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+  }
+  
+  .logo h1 {
+    color: #1e88e5;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    width: 100%;
+    height: 12px;
+    margin-bottom: 30px;
+    background: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background: #1e88e5;
+    transition: width 0.3s ease;
+  }
+  
+  /* Input Fields */
+  input {
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 12px 25px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(30, 136, 229, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1565c0;
+    box-shadow: 0 6px 15px rgba(21, 101, 192, 0.4);
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #555;
+    font-size: 14px;
+  }
+  
