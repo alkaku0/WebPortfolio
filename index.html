@@ -3,48 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Alkaku0</title>
-  <link rel="stylesheet" href="home.css">
+  <title>Welcome - Alkaku0</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="navbar">
-    <div class="brand">
-      <h1>Alkaku0 Portfolio</h1>
-      <p>Web Developer & Network Security Specialist</p>
-    </div>
     <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="index.html" class="text" data-en="Home" data-cs="Domů">Home</a>
+      <a href="about.html" class="text" data-en="About Me" data-cs="O mně">About Me</a>
+      <a href="projects.html" class="text" data-en="Projects" data-cs="Projekty">Projects</a>
+      <a href="contact.html" class="text" data-en="Contact Me" data-cs="Kontakt">Contact Me</a>
     </nav>
   </header>
   <main class="hero">
-    <div class="hero-content">
-      <h1>Welcome to My World</h1>
-      <p>I'm Alkaku0, a passionate developer specializing in HTML, CSS, JavaScript, and Python.</p>
-      <button onclick="window.location.href='about.html';" class="btn-primary">Learn More About Me</button>
-    </div>
-    <div class="features">
-      <div class="feature">
-        <i class="icon">&#x1F4BB;</i>
-        <h2>Web Development</h2>
-        <p>Creating modern, responsive, and stunning websites.</p>
-      </div>
-      <div class="feature">
-        <i class="icon">&#x1F6E1;</i>
-        <h2>Network Security</h2>
-        <p>Ensuring safety and reliability of online systems.</p>
-      </div>
-      <div class="feature">
-        <i class="icon">&#x1F4DA;</i>
-        <h2>Python Programming</h2>
-        <p>Delivering efficient and scalable solutions.</p>
-      </div>
-    </div>
+    <h1 class="text" data-en="Welcome to My Portfolio" data-cs="Vítejte na mém portfoliu">Welcome to My Portfolio</h1>
+    <p class="text" data-en="Explore my work and learn more about me." data-cs="Prozkoumejte mé projekty a dozvíte se o mně více.">
+      Explore my work and learn more about me.
+    </p>
+    <a href="about.html" class="btn-primary text" data-en="More About Me" data-cs="Více o mně">More About Me</a>
   </main>
   <footer class="footer">
-    <p>© 2025 Alkaku0. All rights reserved.</p>
+    <p class="text" data-en="© 2025 Alkaku0. All rights reserved." data-cs="© 2025 Alkaku0. Všechna práva vyhrazena.">© 2025 Alkaku0. All rights reserved.</p>
+    <button onclick="toggleLanguage()" class="btn-lang-switcher">🌍 English / Čeština</button>
   </footer>
 </body>
 </html>

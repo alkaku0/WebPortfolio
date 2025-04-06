@@ -5,42 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Alkaku0</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="navbar">
-    <div class="brand">
-      <h1>Alkaku0 Portfolio - My Projects</h1>
-      <p>Web Developer & Network Security Specialist</p>
-    </div>
     <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="index.html" class="text" data-en="Home" data-cs="Domů">Home</a>
+      <a href="about.html" class="text" data-en="About Me" data-cs="O mně">About Me</a>
+      <a href="projects.html" class="text" data-en="Projects" data-cs="Projekty">Projects</a>
+      <a href="contact.html" class="text" data-en="Contact Me" data-cs="Kontakt">Contact Me</a>
     </nav>
   </header>
-  <main class="projects-content">
-    <h1>Projects</h1>
-    <p>Here are some of the projects I am currently working on:</p>
+  <main class="projects-section">
+    <h1 class="text" data-en="My Projects" data-cs="Moje projekty">My Projects</h1>
     <div class="project-grid">
       <div class="project-widget">
-        <h2>Portfolio Website</h2>
-        <p>
-          This portfolio website showcases my skills and serves as a hub for my projects. Built using HTML, CSS, and JavaScript, it reflects my ability to design responsive and visually appealing websites.
+        <h2 class="text" data-en="Portfolio Website" data-cs="Portfolio web">Portfolio Website</h2>
+        <p class="text" data-en="A sleek, responsive portfolio showcasing web development and design expertise." data-cs="Elegantní, responzivní portfolio ukazující odborné znalosti v oblasti vývoje webů a designu.">
+          A sleek, responsive portfolio showcasing web development and design expertise.
         </p>
-        <button onclick="window.location.href='index.html';" class="btn-primary">View Website</button>
+        <a href="https://alkaku0.github.io/WebPortfolio/index.html" class="btn-secondary text" data-en="View Live Demo" data-cs="Zobrazit ukázku">View Live Demo</a>
       </div>
       <div class="project-widget">
-        <h2>Coming Soon...</h2>
-        <p>
-          A new project is on the horizon! Stay tuned for updates as I expand my skills and dive into exciting new ideas. Details will be added here soon.
+        <h2 class="text" data-en="Coming Soon..." data-cs="Již brzy...">Coming Soon...</h2>
+        <p class="text" data-en="A new project is in development. Stay tuned!" data-cs="Pracuje se na novém projektu. Zůstaňte naladěni!">
+          A new project is in development. Stay tuned!
         </p>
       </div>
     </div>
   </main>
   <footer class="footer">
-    <p>© 2025 Alkaku0. All rights reserved</p>
-    <p>Email: <a href="mailto:alkaku0@seznam.cz">alkaku0@seznam.cz</a></p>
+    <p class="text" data-en="© 2025 Alkaku0. All rights reserved." data-cs="© 2025 Alkaku0. Všechna práva vyhrazena.">
+      © 2025 Alkaku0. All rights reserved.
+    </p>
+    <button onclick="toggleLanguage()" class="btn-lang-switcher">🌍 English / Čeština</button>
   </footer>
 </body>
 </html>

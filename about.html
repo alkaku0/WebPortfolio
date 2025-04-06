@@ -5,35 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Alkaku0</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="navbar">
-    <div class="brand">
-      <h1>Alkaku0 Portfolio - More About Me</h1>
-      <p>Web Developer & Network Security Specialist</p>
-    </div>
     <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact Me</a>
+      <a href="index.html" class="text" data-en="Home" data-cs="Domů">Home</a>
+      <a href="about.html" class="text" data-en="About Me" data-cs="O mně">About Me</a>
+      <a href="projects.html" class="text" data-en="Projects" data-cs="Projekty">Projects</a>
+      <a href="contact.html" class="text" data-en="Contact Me" data-cs="Kontakt">Contact Me</a>
     </nav>
   </header>
-  <main class="hero">
-    <div class="hero-content">
-      <h1>About Me</h1>
-      <p>
-        Hi, I’m Alkaku0! A passionate web developer and network security specialist focused on creating innovative solutions.
+  <main class="about-section">
+    <div class="about-banner">
+      <h1 class="text" data-en="About Me" data-cs="O mně">About Me</h1>
+      <p class="text" data-en="Hi, I’m Alkaku0! I specialize in creating interactive, responsive websites with a strong focus on network security."
+         data-cs="Ahoj, jsem Alkaku0! Specializuji se na tvorbu interaktivních, responzivních webů s důrazem na bezpečnost sítí.">
+         Hi, I’m Alkaku0! I specialize in creating interactive, responsive websites with a strong focus on network security.
       </p>
-      <p>
-        My expertise spans HTML, CSS, JavaScript, and Python, enabling me to craft responsive and reliable digital experiences. My mission is to bridge the gap between creativity and technology to deliver impactful results.
-      </p>
-      <button onclick="window.location.href='contact.html';" class="btn-primary">Connect With Me</button>
+    </div>
+    <div class="about-content">
+      <h2 class="text" data-en="What I Bring to the Table" data-cs="Co vám mohu nabídnout">What I Bring to the Table</h2>
+      <ul>
+        <li class="text" data-en="Custom web development tailored to your unique needs." data-cs="Vývoj webu na míru vašim jedinečným potřebám.">
+          Custom web development tailored to your unique needs.
+        </li>
+        <li class="text" data-en="Advanced network security audits and digital protection." data-cs="Pokročilé audity zabezpečení sítí a digitální ochrana.">
+          Advanced network security audits and digital protection.
+        </li>
+        <li class="text" data-en="Visually stunning, user-friendly designs." data-cs="Vizuálně přitažlivý a uživatelsky přívětivý design.">
+          Visually stunning, user-friendly designs.
+        </li>
+      </ul>
+    </div>
+    <div class="testimonials-section">
+      <h2 class="text" data-en="Testimonials" data-cs="Reference">Testimonials</h2>
+      <div class="testimonial">
+        <blockquote class="text" data-en="Alkaku0 transformed our website and greatly improved its security." data-cs="Alkaku0 transformoval náš web a významně zlepšil jeho zabezpečení.">
+          Alkaku0 transformed our website and greatly improved its security.
+        </blockquote>
+        <cite class="text" data-en="– Vojtěch Drahoš" data-cs="– Vojtěch Drahoš">– Vojtěch Drahoš</cite>
+      </div>
     </div>
   </main>
   <footer class="footer">
-    <p>© 2025 Alkaku0. All rights reserved</p>
-    <p>Email: <a href="mailto:alkaku0@seznam.cz">alkaku0@seznam.cz</a></p>
+    <p class="text" data-en="© 2025 Alkaku0. All rights reserved." data-cs="© 2025 Alkaku0. Všechna práva vyhrazena.">© 2025 Alkaku0. All rights reserved.</p>
+    <button onclick="toggleLanguage()" class="btn-lang-switcher">🌍 English / Čeština</button>
   </footer>
 </body>
 </html>
