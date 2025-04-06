@@ -5,7 +5,7 @@ body {
   background-color: #f9f9f9;
   color: #1a1a1d;
   line-height: 1.6;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s ease-in-out;
 }
 
 /* Navigation Bar */
@@ -33,7 +33,7 @@ body {
   padding: 10px 15px;
   border-radius: 50px;
   color: #007acc;
-  transition: background-color 0.3s, color 0.3s ease-in-out, transform 0.2s;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 .menu a:hover {
@@ -48,7 +48,6 @@ body {
   padding: 80px 20px;
   background: linear-gradient(135deg, #007acc, #005bb5);
   color: #ffffff;
-  animation: fadeIn 1s ease-in-out;
 }
 
 .hero h1 {
@@ -71,12 +70,103 @@ body {
   text-decoration: none;
   border-radius: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #005bb5;
   transform: translateY(-3px);
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2em;
+  color: #007acc;
+  margin-bottom: 15px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #4a4a4a;
+}
+
+/* Portfolio Section */
+.portfolio-highlight {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.portfolio-highlight h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #007acc;
+}
+
+.project-highlight {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-highlight h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+.project-highlight p {
+  font-size: 1em;
+  color: #4a4a4a;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #007acc;
+  font-size: 1em;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #007acc;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #007acc;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #007acc;
+  color: #ffffff;
+}
+
+.call-to-action h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.call-to-action a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* About Section */
@@ -92,7 +182,6 @@ body {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-in-out;
 }
 
 .about-banner h1 {
@@ -106,7 +195,6 @@ body {
 
 .about-content {
   margin-top: 30px;
-  animation: slideInUp 1s ease-in-out;
 }
 
 .about-content h2 {
@@ -132,48 +220,10 @@ body {
   font-weight: bold;
 }
 
-.about-content p {
-  font-size: 1.2em;
-  color: #4a4a4a;
-  margin-top: 20px;
-}
-
-/* Testimonials Section */
-.testimonials-section {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.testimonials-section h2 {
-  font-size: 2em;
-  color: #007acc;
-  margin-bottom: 20px;
-}
-
-.testimonial {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial blockquote {
-  font-size: 1.2em;
-  margin: 0 0 10px;
-  color: #4a4a4a;
-}
-
-.testimonial cite {
-  font-size: 1em;
-  color: #007acc;
-  font-weight: bold;
-}
-
 /* Projects Section */
 .projects-section {
   padding: 60px 20px;
   text-align: center;
-  animation: slideInUp 1s ease-in-out;
 }
 
 .projects-section h1 {
@@ -194,7 +244,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-widget:hover {
@@ -213,30 +263,11 @@ body {
   color: #4a4a4a;
 }
 
-.btn-secondary {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #007acc;
-  font-size: 1em;
-  padding: 10px 20px;
-  text-decoration: none;
-  border: 1px solid #007acc;
-  border-radius: 30px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-secondary:hover {
-  background-color: #007acc;
-  color: #ffffff;
-  transform: translateY(-3px);
-}
-
 /* Contact Section */
 .contact-section {
   padding: 60px 20px;
   text-align: center;
   background-color: #f0f8ff;
-  animation: slideInUp 1s ease-in-out;
 }
 
 .contact-section h1 {
@@ -297,7 +328,7 @@ body {
   padding: 8px 20px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-lang-switcher:hover {
